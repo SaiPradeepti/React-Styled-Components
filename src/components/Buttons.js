@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const BasicButton = styled.button`
     background: none;
-    color: ${(props)=>{console.log(props);return props.special && 'red';}};
+    color: ${({special})=>(special ? 'red' : 'blue')};
     border: 1px solid blue;
     border-radius: 10px;
     outline: none;

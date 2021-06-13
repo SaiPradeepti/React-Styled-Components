@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Title from './Title'
 import { BasicButton } from './Buttons'
+import { ColoredButton } from './ExtendedStyleComponents'
 
 const Body = styled.div`
     display: flex;
@@ -15,6 +16,7 @@ const AddingProps = () => {
             <Title>styled components</Title>
             <BasicButton onClick={()=>alert("You've clicked a styled button component")}>click here</BasicButton>
             <BasicButton special>hi</BasicButton>
+            <ColoredButton>Hello</ColoredButton>
         </Body>
     )
 }
