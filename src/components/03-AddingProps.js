@@ -4,7 +4,7 @@ import Title from './Title'
 import { BasicButton } from './Buttons'
 import { ColoredButton } from './ExtendedStyleComponents'
 
-const Body = styled.div`
+export const Body = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;

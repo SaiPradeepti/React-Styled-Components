@@ -11,3 +11,16 @@ export const ColoredButton = styled(BasicButton)`
         color: blue;
     }
 `;
+
+
+export const VariableColoredButton = styled(BasicButton)`
+    background: ${({color})=>`${color}`};
+    color: white;
+    border: none;
+    transition: transform 0.5s ease;
+
+    &:hover{
+        transform: scale(1.1);
+        background: ${({color})=>`${color}`};
+    }
+`;
