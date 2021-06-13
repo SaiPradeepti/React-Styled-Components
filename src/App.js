@@ -1,18 +1,14 @@
-import styled from "styled-components";
-
-// tagged template literal
-const BasicTitle = styled.h1`
-  text-align: center;
-  padding: 3rem;
-  color: #222;
-  text-transform: capitalize;
-`;
+import BasicTitle from './components/01-BasicTitle'
+import Button from './components/02-Button'
+import AddingProps from './components/03-AddingProps'
 
 function App() {
 
   return (
     <div className="App">
-      <BasicTitle>styled components</BasicTitle>
+      {/* <BasicTitle /> */}
+      {/* <Button /> */}
+      <AddingProps />
     </div>
   );
 }
